@@ -1,0 +1,647 @@
+
+/* NAV MINHA CONTA, HOME, CONTATO, SOBRE */
+.nav-link {
+  text-align: left;
+}
+
+.navbar {
+  list-style: none;
+  background-color: #c52d2d;
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  margin-right: 20px;
+}
+
+.iconnav {
+  margin-right: auto;
+}
+
+.navbar-nav {
+  margin: 0;
+  padding-left: 0;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navicon {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.navicon i {
+  font-size: 1.2em;
+}
+
+.navbar-nav.ml-auto.align-items-center {
+  display: flex;
+  align-items: center;
+}
+/* FIM NAV MINHA CONTA, HOME, CONTATO, SOBRE */
+
+
+/* 
+.nav-link {
+  text-align: left;
+}
+
+.navbar img {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+.navbar {
+  background-color: #c52d2d;
+}
+*/
+
+
+/* ////////////////////// MENU ICON (PROMOÇOES, PIZZAS, ACOMPANHAMENTO...) ////////////////////// */
+.menu-sticky .menu-sticky-list .menu-sticky-link .menu-sticky-link-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.menu-sticky .menu-sticky-list li {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-weight: bolder;
+}
+
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0; /* define o padding à esquerda como 0 */
+    padding-inline-end: 0px; /* define o padding à direita como 0 */
+}
+
+ol, ul {
+    list-style: none;
+}
+
+
+.menu-sticky {
+    position: relative;
+    z-index: 9997;
+}
+
+
+.menu-sticky .menu-sticky-list {
+    border-bottom: #FFD2B4 1px solid;
+    *zoom: 1;
+}
+
+.wrapper-home .menu-sticky .menu-sticky-list .menu-sticky-link {
+    height: 80px;
+}
+
+.menu-sticky .menu-sticky-list li:after {
+    content: '';
+    display: table;
+}
+
+.menu-sticky .menu-sticky-list:after {
+    clear: both;
+}
+
+.menu-sticky .menu-sticky-list:before, .menu-sticky .menu-sticky-list:after {
+    content: '';
+    display: table;
+}
+
+.menu-sticky .menu-sticky-list li:nth-child(1) .menu-sticky-link {
+    color: #F0141E;
+    border-top-color: #f90404;
+}
+
+.menu-sticky .menu-sticky-list li:nth-child(2) .menu-sticky-link {
+    color: #FF5A1E;
+    border-top-color: #FF5A1E;
+}
+
+.menu-sticky .menu-sticky-list li:nth-child(3) .menu-sticky-link {
+    color: #FFDC32;
+    border-top-color: #FFDC32;
+}
+
+.menu-sticky .menu-sticky-list li:nth-child(4) .menu-sticky-link {
+    color: #B9E1AA;
+    border-top-color: #B9E1AA;
+}
+
+.menu-sticky .menu-sticky-list li:nth-child(5) .menu-sticky-link {
+    color: #cc20cf;
+    border-top-color: #cc20cf;
+}
+
+
+.menu-sticky .menu-sticky-list .menu-sticky-link {
+    height: 80px;
+    display: block;
+    position: relative;
+    background-color: #fff;
+    font-size: 0.9375em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-top-width: 5px;
+    border-top-style: solid;
+}
+/* ////////////////////// FIM DO MENU ICON (PROMOÇOES, PIZZAS, ACOMPANHAMENTO...) ////////////////////// */
+
+/* RESPONSIVE DO MENU COM ICON ... PROMOÇOES, PIZZAS.... */ 
+@media only screen and (max-width: 800px){
+.menu-sticky {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+/*lista de rolagem quando diminui a tela*/
+.menu-sticky .menu-sticky-list {
+    /*width: 105vw;*/
+    width: 100vw;
+    
+}
+
+.menu-sticky .menu-sticky-list li {
+    width: 20vw;
+}
+
+.menu-sticky .menu-sticky-list li .menu-sticky-link {
+    font-size: 0.675em;
+}
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1050px) {
+.menu-sticky .menu-sticky-list li .menu-sticky-link {
+    font-size: 0.75em;
+}
+}
+/* FIM DO RESPONSIVE DO MENU COM ICON ... PROMOÇOES, PIZZAS.... */ 
+
+
+/*SLIDER SECTION PIZZAS*/
+html, body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.global-page-container  {
+  position: relative;
+	width: 100%;
+	display: inline-block;
+  margin: auto;
+  height: 100%;
+}
+
+.pizzas-slider {
+  padding: 8px 0 6px 0;
+  overflow: hidden;
+}
+
+.pizzas-slider .slide {
+
+  transform: scale(0.6);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  outline: none !important;
+}
+
+.pizzas-slider .slide.slick-center {
+  transform: scale(1);
+}
+
+.arrow {
+  /*propriedade para deixa as setas do lado da imagem slider */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /**/
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #efc1c1;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/*propriedade para deixa as setas do lado da imagem slider */
+#arrow-prev {
+  left: 0;
+}
+#arrow-next {
+  right: 0;
+}
+/**/
+
+
+.arrow i {
+  font-size: 1.5rem;
+}
+
+.description {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  width: 275px;
+  vertical-align: middle;
+  font-family: 'Poppins';
+  font-weight: 300;
+  color: #3a3a3a;
+
+}
+
+#pizzas-price {
+  color: #e47878;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 28px;
+}
+
+#pizzas-description {
+  margin-bottom: 5px;
+  display: inline-block;
+  width: 500px;
+  font-size: 15px;
+  color: #e47878;
+  
+}
+
+
+/* Small Screens */
+@media only screen and (max-width: 640px) {
+  }   
+
+/* Medium Screens */
+@media only screen and (min-width: 641px) and (max-width: 1023px) {
+    .pizzas-slider .bebidas-slider .acompanhamentos-slider .sobremesas-slider .promocoes-slider .slide {
+      width: 33%;
+    }
+  }
+
+/* Large Screens */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) { 
+    .global-page-container {
+      width: 1024px;
+    }
+  }
+
+/* Extra Large Screens*/
+@media only screen and (min-width: 1441px) {
+    .global-page-container {
+      width: 1440px;
+    }        
+}
+
+@media (max-width: 480px) {
+  #pizzas-description, .description, .adicionar-ao-carrinho {
+    width: 90%;
+  }
+}
+/*FIM SLIDER SECTION PIZZAS*/
+
+
+/*BOTAO ADICIONAR AO CARRINHO */
+.adicionar-ao-carrinho {
+  margin-bottom: 20px;
+  background-color: #e47878;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.adicionar-ao-carrinho:hover {
+  background-color: #a35555;
+}
+/*FIM BOTAO ADICIONAR AO CARRINHO */
+
+
+/*INICIO CODIGO FOOTER */
+footer {
+  background-color: #f2f2f2;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.footer-col {
+  flex-basis: 100%;
+  max-width: 100%;
+  margin-bottom: 20px; }
+
+
+
+.footer-logo img {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+.footer-address p, .footer-phone p {
+  margin-bottom: 5px;
+}
+
+.map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  border-radius: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media only screen and (min-width: 768px){
+  .footer-col {
+    flex-basis: 25%;
+    max-width: 25%;
+    margin-bottom: 0;
+  }
+}
+/*FIM FOOTER */
+
+
+/*SLIDER SECTION BEBIDAS*/
+
+.bebidas-slider {
+  padding: 8px 0 6px 0;
+  overflow: hidden;
+}
+
+.bebidas-slider .slide {
+
+  transform: scale(0.6);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  outline: none !important;
+}
+
+.bebidas-slider .slide.slick-center {
+  transform: scale(1);
+}
+
+#bebidas-price {
+  color: #e47878;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 28px;
+}
+
+
+#arrow-prevBEBIDAS {
+  left: 0;
+}
+#arrow-nextBEBIDAS {
+  right: 0;
+}
+
+/*FIM SLIDER SECTION BEBIDAS*/
+
+
+
+/*SLIDER SECTION SOBREMESAS*/
+.sobremesas-slider {
+  padding: 8px 0 6px 0;
+  overflow: hidden;
+}
+
+.sobremesas-slider .slide {
+
+  transform: scale(0.6);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  outline: none !important;
+}
+
+.sobremesas-slider .slide.slick-center {
+  transform: scale(1);
+}
+
+#sobremesas-price {
+  color: #e47878;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 28px;
+}
+
+
+#arrow-prevSOBREMESAS {
+  left: 0;
+}
+#arrow-nextSOBREMESAS {
+  right: 0;
+}
+/*FIM SLIDER SECTION SOBREMESAS*/
+
+
+/*SLIDER SECTION ACOMPANHAMENTOS*/
+.acompanhamentos-slider {
+  padding: 8px 0 6px 0;
+  overflow: hidden;
+}
+
+.acompanhamentos-slider .slide {
+
+  transform: scale(0.6);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  outline: none !important;
+}
+
+.acompanhamentos-slider .slide.slick-center {
+  transform: scale(1);
+}
+
+#acompanhamentos-price {
+  color: #e47878;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 28px;
+}
+
+
+#arrow-prevACOMPANHAMENTOS {
+  left: 0;
+}
+#arrow-nextACOMPANHAMENTOS {
+  right: 0;
+}
+/*FIM SLIDER SECTION ACOMPANHAMENTOS*/
+
+
+/*SLIDER SECTION PROMOCOES*/
+.promocoes-slider {
+  padding: 8px 0 6px 0;
+  overflow: hidden;
+}
+
+.promocoes-slider .slide {
+  transform: scale(0.6);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  outline: none !important;
+}
+
+.promocoes-slider .slide.slick-center {
+  transform: scale(1);
+}
+
+#promocoes-price {
+  color: #e47878;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 28px;
+}
+
+#arrow-prevPROMOCOES {
+  left: 0;
+}
+#arrow-nextPROMOCOES {
+  right: 0;
+}
+/*FIM SLIDER SECTION PROMOCOES*/
+
+
+/* LOGIN */
+.wrapper {	
+	margin: 0;
+  margin-top: 150px;
+  min-height: 45vh;
+
+  }
+  
+.form-signin {
+  max-width: 380px;
+  padding: 50px 35px 45px;
+  margin: 0 auto;
+  background-color: #f4eded;
+  border: 1px solid rgba(235, 0, 0, 0.547);  }
+
+  .form-signin-heading,
+	.checkbox {
+	  margin-bottom: 30px;
+	}
+
+	.checkbox {
+	  font-weight: normal;
+	}
+
+	.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+  }
+  
+
+	input[type="text"] {
+	  margin-bottom: -1px;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+	}
+
+	input[type="password"] {
+	  margin-bottom: 20px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	}
+/* FIM LOGIN */
+
+
+/* PAGINA SOBRE AND CONTATO */
+.about-container{
+  width: 100%;
+  min-height: 65vh;
+  background-color: #f4eded;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.text-container{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 22px;
+}
+
+.text-container h1{
+  font-size: 70px;
+  padding: 20px 0px;
+}
+
+@media screen and (max-width: 1600px){
+  .about-container{
+      width: 100%;
+  }
+  .text-container h1{
+      font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .about-container{
+      flex-direction: column;
+  }
+  .text-container {
+      align-items: center;
+  }
+}
+/* FIM PAGINA SOBRE AND CONTATO */
+
+
+
+
